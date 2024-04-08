@@ -30,7 +30,8 @@ struct ContentView: SwiftUI.View {
     }
 }
 
-
-#Preview {
-    ContentView()
+struct ContentView_Previews: SwiftUI.PreviewProvider {
+    static var previews: some SwiftUI.View {
+        ContentView()
+    }
 }
