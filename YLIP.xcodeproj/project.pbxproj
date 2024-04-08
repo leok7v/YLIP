@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B34694072BC36B070058B51E /* YLIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694062BC36B070058B51E /* YLIPApp.swift */; };
+		B34694072BC36B070058B51E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694062BC36B070058B51E /* App.swift */; };
 		B34694092BC36B070058B51E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694082BC36B070058B51E /* ContentView.swift */; };
 		B346940B2BC36B080058B51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B346940A2BC36B080058B51E /* Assets.xcassets */; };
 		B346940F2BC36B080058B51E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B346940E2BC36B080058B51E /* Preview Assets.xcassets */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		B34694032BC36B070058B51E /* YLIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B34694062BC36B070058B51E /* YLIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPApp.swift; sourceTree = "<group>"; };
+		B34694062BC36B070058B51E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B34694082BC36B070058B51E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B346940A2BC36B080058B51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B346940C2BC36B080058B51E /* YLIP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YLIP.entitlements; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		B34694052BC36B070058B51E /* YLIP */ = {
 			isa = PBXGroup;
 			children = (
-				B34694062BC36B070058B51E /* YLIPApp.swift */,
+				B34694062BC36B070058B51E /* App.swift */,
 				B34694082BC36B070058B51E /* ContentView.swift */,
 				B346940A2BC36B080058B51E /* Assets.xcassets */,
 				B346940C2BC36B080058B51E /* YLIP.entitlements */,
@@ -273,7 +273,7 @@
 				B34694092BC36B070058B51E /* ContentView.swift in Sources */,
 				B36449A42BC483F400566716 /* cmodule.swift in Sources */,
 				B36449A22BC481A800566716 /* service.c in Sources */,
-				B34694072BC36B070058B51E /* YLIPApp.swift in Sources */,
+				B34694072BC36B070058B51E /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

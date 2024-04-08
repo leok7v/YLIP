@@ -25,9 +25,9 @@ jobs:
 
       - name: Build Project
         run: |
-          xcodebuild -scheme YLIP -sdk iphoneos -configuration Release build
+          xcodebuild -scheme YLIP -sdk iphoneos -configuration Release -allowProvisioningUpdates build
 
       - name: Archive Project
         run: |
-          xcodebuild -scheme YLIP -sdk iphoneos -configuration Release archive -archivePath ./build/YLIP.xcarchive
+          xcodebuild -scheme YLIP -sdk iphoneos -configuration Release -allowProvisioningUpdates archive -archivePath ./build/YLIP.xcarchive
 
