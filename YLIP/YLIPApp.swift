@@ -1,9 +1,9 @@
 import SwiftUI
 
 @main
-struct YLIPApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct App: SwiftUI.App {
+    var body: some SwiftUI.Scene {
+        SwiftUI.WindowGroup {
             ContentView()
         }
     }
