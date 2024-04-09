@@ -16,6 +16,7 @@
 		B34694252BC36B080058B51E /* YLIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694242BC36B080058B51E /* YLIPUITestsLaunchTests.swift */; };
 		B36449A22BC481A800566716 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = B36449A12BC481A800566716 /* service.c */; };
 		B36449A42BC483F400566716 /* cmodule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36449A32BC483F400566716 /* cmodule.swift */; };
+		B3721DB42BC4F0D000494201 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3721DB32BC4F0D000494201 /* util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B36449A02BC481A800566716 /* service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
 		B36449A12BC481A800566716 /* service.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
 		B36449A32BC483F400566716 /* cmodule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cmodule.swift; sourceTree = "<group>"; };
+		B3721DB32BC4F0D000494201 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				B36449A12BC481A800566716 /* service.c */,
 				B364499F2BC481A800566716 /* bridging-header.h */,
 				B36449A32BC483F400566716 /* cmodule.swift */,
+				B3721DB32BC4F0D000494201 /* util.swift */,
 			);
 			path = YLIP;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				B34694092BC36B070058B51E /* ContentView.swift in Sources */,
 				B36449A42BC483F400566716 /* cmodule.swift in Sources */,
 				B36449A22BC481A800566716 /* service.c in Sources */,
+				B3721DB42BC4F0D000494201 /* util.swift in Sources */,
 				B34694072BC36B070058B51E /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
