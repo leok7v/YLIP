@@ -13,6 +13,7 @@ struct Service {
     static var downloaded_closure: ((Int32, String) -> Void)?
     static var loaded_closure: ((Int32, String) -> Void)?
     static var token_closure: ((String) -> Void)?
+    static var done_closure: (() -> Void)?
 
     static let downloaded: @convention(c) (Int32, UnsafePointer<CChar>?) -> Void = { err, text in
         guard let cs = text else { return }
@@ -30,7 +31,7 @@ struct Service {
     }
     
     static let generated: @convention(c) () -> Void = {
-        print("Generated")
+        done_closure?()
     }
 
     static func ini() {
@@ -60,8 +61,10 @@ struct Service {
     }
     
     static func generate(prompt: String,
-                         token: @escaping (String) -> Void) {
+                         token: @escaping (String) -> Void,
+                         done: @escaping () -> Void) {
         token_closure = token
+        done_closure = done
         prompt.withCString { cPrompt in
             service.generate(cPrompt)
         }

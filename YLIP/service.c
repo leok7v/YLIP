@@ -12,8 +12,8 @@ static void service_ini(void) {
 }
 
 static void* download_thread(void *argument) {
-    const int32_t ms = random() % 1000;
-    struct timespec delay = { .tv_sec = 1, .tv_nsec = 1000 * 1000 * ms };
+    const int32_t ms = random() % 1000 + 250;
+    struct timespec delay = { .tv_sec = 0, .tv_nsec = 1000 * 1000 * ms };
     nanosleep(&delay, null);
     if (service.downloaded != null) {
         service.downloaded(0, "");
@@ -30,8 +30,8 @@ static void service_download(const char* url, const char* file) {
 }
 
 static void* load_thread(void *argument) {
-    const int32_t ms = random() % 1000;
-    struct timespec delay = { .tv_sec = 1, .tv_nsec = 1000 * 1000 * ms };
+    const int32_t ms = random() % 1000 + 250;
+    struct timespec delay = { .tv_sec = 0, .tv_nsec = 1000 * 1000 * ms };
     nanosleep(&delay, null);
     if (service.loaded != null) {
         service.loaded(0, "");
@@ -48,9 +48,9 @@ static void service_load(const char* file) {
 }
 
 static void* generate_thread(void *argument) {
-    for (int32_t i = 0; i < 10; i++) {
-        const int32_t ms = random() % 1000;
-        struct timespec delay = { .tv_sec = 1, .tv_nsec = 1000 * 1000 * ms };
+    for (int32_t i = 0; i < 100; i++) {
+        const int32_t ms = random() % 50 + 25;
+        struct timespec delay = { .tv_sec = 0, .tv_nsec = 1000 * 1000 * ms };
         nanosleep(&delay, null);
         if (service.token != null) {
             service.token(i % 2 == 0 ? "foo\x20" : "bar\x20");

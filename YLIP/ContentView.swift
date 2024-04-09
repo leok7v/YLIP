@@ -1,6 +1,5 @@
 import SwiftUI
 
-
 struct ContentView: View {
     
     @State private var displayText = "Hello, world!"
@@ -13,8 +12,13 @@ struct ContentView: View {
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundStyle(.tint)
+                    .frame(maxWidth: .infinity, alignment: .topLeading) // Aligns the image to the top leading
                 Text(displayText)
-                Button("Bye") {
+                    .lineLimit(nil)
+                    .frame(maxWidth: .infinity, alignment: .topLeading) // Aligns the text to the top leading
+                    .multilineTextAlignment(.leading)
+                Spacer() // Pushes the button to the bottom
+                Button("Mirror") {
                     let r = Service.mirror(input: displayText)
                     if r.err == 0 {
                         displayText = r.output
@@ -23,9 +27,10 @@ struct ContentView: View {
                         withAnimation { showError = true }
                     }
                 }
+                .frame(maxWidth: .infinity, alignment: .bottom)
                 .padding()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity) // Makes VStack fill the screen
             .onTapGesture { withAnimation { showError = false } }
             ToastView(message: errorText, isError: true, isVisible: $showError)
         }
@@ -40,8 +45,6 @@ struct ContentView: View {
                     }
                 }
             }
-//          Service.load(file: "foo.bar")
-//          Service.generate(prompt: "some text prompt")
         }
     }
 
@@ -60,15 +63,19 @@ struct ContentView: View {
     
     func loaded() {
         print("Load successful")
-        Service.generate(prompt: "foo bar"){ text in
-            DispatchQueue.main.async {
-                token(text)
-            }
-        }
+        Service.generate(prompt: "foo bar",
+             token: { text in DispatchQueue.main.async { token(text) } },
+             done: { DispatchQueue.main.async { done() } })
     }
 
     func token(_ token: String) {
         print("token: \(token)")
+        displayText += " " + token
+    }
+
+    func done() {
+        print("done")
+        displayText += " done."
     }
 }
 
