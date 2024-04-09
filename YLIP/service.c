@@ -22,21 +22,39 @@ errno_t mirror(const uint8_t* input, int64_t input_bytes, uint8_t* output, int64
     }
 }
 
+static void service_ini(void) {}
 
-static void service_init(void) {}
-static void service_download(const char* url, const char* file) {}
-static void service_load(const char* file) {}
-static void service_generate(const char* prompt) {}
+static void service_download(const char* url, const char* file) {
+    if (service.downloaded != null) {
+        service.downloaded(0, "");
+    }
+}
+
+static void service_load(const char* file) {
+    if (service.loaded != null) {
+        service.loaded(0, "");
+    }
+}
+
+static void service_generate(const char* prompt) {
+    if (service.token != null) {
+        service.token("snafu");
+    }
+    if (service.generated != null) {
+        service.generated();
+    }
+}
+
 static void service_fini(void) {}
 
-service_if seervice = {
-    .init = service_init,
+service_if service = {
+    .ini = service_ini,
     .download = service_download,
     .downloaded = null,
     .load = service_load,
     .loaded = null,
     .generate = service_generate,
-    .generated_token = null,
+    .token = null,
     .generated = null,
     .fini = service_fini
 };

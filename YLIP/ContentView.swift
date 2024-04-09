@@ -1,6 +1,8 @@
 import SwiftUI
 
+
 struct ContentView: View {
+    
     @State private var displayText = "Hello, world!"
     @State private var errorText = ""
     @State private var showError = false
@@ -26,6 +28,12 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .onTapGesture { withAnimation { showError = false } }
             ToastView(message: errorText, isError: true, isVisible: $showError)
+        }
+        .onAppear {
+            Service.ini()
+            Service.download(url: "https://foo.bar", file: "foo.bar")
+            Service.load(file: "foo.bar")
+            Service.generate(prompt: "some text prompt")
         }
     }
 }
