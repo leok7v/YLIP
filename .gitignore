@@ -1,2 +1,3 @@
 .DS_Store
-YLIP.xcodeproj/project.xcworkspace/xcuserdata/leo.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcodeproj/project.xcworkspace/xcuserdata/*
+*.xcodeproj/xcuserdata/*.xcuserdatad/*/*
