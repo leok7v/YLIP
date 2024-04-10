@@ -14,14 +14,11 @@ struct App: SwiftUI.App {
                     appState.loadState()
                 }
         }
-        .onChange(of: scenePhase) { newPhase in  // React to scene phase changes
-            switch newPhase {
-            case .inactive: appState.saveState()
-            case .active: appState.loadState()
-            case .background: // Handle background state if needed
-                break
-            @unknown default:
-                break
+        .onChange(of: scenePhase) { // Assuming you want to save state when moving to inactive or background
+            if scenePhase == .inactive || scenePhase == .background {
+                appState.saveState()
+            } else if scenePhase == .active {
+                appState.loadState()
             }
         }
     }

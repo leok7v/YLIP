@@ -10,10 +10,12 @@ struct ContentView: View {
         ZStack {
             VStack {
                 Image(systemName: "globe")
+                    .padding()
                     .imageScale(.large)
                     .foregroundStyle(.tint)
                     .frame(maxWidth: .infinity, alignment: .topLeading) // Aligns the image to the top leading
                 Text(displayText)
+                    .padding()
                     .lineLimit(nil)
                     .frame(maxWidth: .infinity, alignment: .topLeading) // Aligns the text to the top leading
                     .multilineTextAlignment(.leading)

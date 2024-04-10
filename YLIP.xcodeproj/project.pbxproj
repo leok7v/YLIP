@@ -7,71 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B34694072BC36B070058B51E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694062BC36B070058B51E /* App.swift */; };
-		B34694092BC36B070058B51E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694082BC36B070058B51E /* ContentView.swift */; };
-		B346940B2BC36B080058B51E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B346940A2BC36B080058B51E /* Assets.xcassets */; };
-		B346940F2BC36B080058B51E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B346940E2BC36B080058B51E /* Preview Assets.xcassets */; };
-		B34694192BC36B080058B51E /* YLIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694182BC36B080058B51E /* YLIPTests.swift */; };
-		B34694232BC36B080058B51E /* YLIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694222BC36B080058B51E /* YLIPUITests.swift */; };
-		B34694252BC36B080058B51E /* YLIPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34694242BC36B080058B51E /* YLIPUITestsLaunchTests.swift */; };
-		B36449A22BC481A800566716 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = B36449A12BC481A800566716 /* service.c */; };
-		B36449A42BC483F400566716 /* cmodule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36449A32BC483F400566716 /* cmodule.swift */; };
-		B3721DB42BC4F0D000494201 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3721DB32BC4F0D000494201 /* util.swift */; };
+		B36127452BC6610800BDFE67 /* YLIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127442BC6610800BDFE67 /* YLIPApp.swift */; };
+		B36127472BC6610800BDFE67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127462BC6610800BDFE67 /* ContentView.swift */; };
+		B36127492BC6610900BDFE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36127482BC6610900BDFE67 /* Assets.xcassets */; };
+		B361274D2BC6610900BDFE67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B361274C2BC6610900BDFE67 /* Preview Assets.xcassets */; };
+		B36127562BC661F000BDFE67 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = B36127532BC661F000BDFE67 /* service.c */; };
+		B36127572BC661F000BDFE67 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127542BC661F000BDFE67 /* util.swift */; };
+		B361275A2BC6621E00BDFE67 /* cmodule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127592BC6621E00BDFE67 /* cmodule.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B34694152BC36B080058B51E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B34693FB2BC36B070058B51E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B34694022BC36B070058B51E;
-			remoteInfo = YLIP;
-		};
-		B346941F2BC36B080058B51E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B34693FB2BC36B070058B51E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B34694022BC36B070058B51E;
-			remoteInfo = YLIP;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		B309CBE12BC52D1300807283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B34694032BC36B070058B51E /* YLIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B34694062BC36B070058B51E /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		B34694082BC36B070058B51E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B346940A2BC36B080058B51E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B346940C2BC36B080058B51E /* YLIP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YLIP.entitlements; sourceTree = "<group>"; };
-		B346940E2BC36B080058B51E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B34694142BC36B080058B51E /* YLIPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLIPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B34694182BC36B080058B51E /* YLIPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPTests.swift; sourceTree = "<group>"; };
-		B346941E2BC36B080058B51E /* YLIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B34694222BC36B080058B51E /* YLIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPUITests.swift; sourceTree = "<group>"; };
-		B34694242BC36B080058B51E /* YLIPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B364499F2BC481A800566716 /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
-		B36449A02BC481A800566716 /* service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
-		B36449A12BC481A800566716 /* service.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
-		B36449A32BC483F400566716 /* cmodule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cmodule.swift; sourceTree = "<group>"; };
-		B3721DB32BC4F0D000494201 /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		B36127412BC6610800BDFE67 /* YLIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36127442BC6610800BDFE67 /* YLIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPApp.swift; sourceTree = "<group>"; };
+		B36127462BC6610800BDFE67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B36127482BC6610900BDFE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B361274A2BC6610900BDFE67 /* YLIP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YLIP.entitlements; sourceTree = "<group>"; };
+		B361274C2BC6610900BDFE67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B36127532BC661F000BDFE67 /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service.c; sourceTree = "<group>"; };
+		B36127542BC661F000BDFE67 /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		B36127552BC661F000BDFE67 /* service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
+		B36127582BC661FA00BDFE67 /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
+		B36127592BC6621E00BDFE67 /* cmodule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cmodule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B34694002BC36B070058B51E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B34694112BC36B080058B51E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B346941B2BC36B080058B51E /* Frameworks */ = {
+		B361273E2BC6610800BDFE67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,79 +41,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B34693FA2BC36B070058B51E = {
+		B36127382BC6610800BDFE67 = {
 			isa = PBXGroup;
 			children = (
-				B34694052BC36B070058B51E /* YLIP */,
-				B34694172BC36B080058B51E /* YLIPTests */,
-				B34694212BC36B080058B51E /* YLIPUITests */,
-				B34694042BC36B070058B51E /* Products */,
+				B36127432BC6610800BDFE67 /* YLIP */,
+				B36127422BC6610800BDFE67 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B34694042BC36B070058B51E /* Products */ = {
+		B36127422BC6610800BDFE67 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B34694032BC36B070058B51E /* YLIP.app */,
-				B34694142BC36B080058B51E /* YLIPTests.xctest */,
-				B346941E2BC36B080058B51E /* YLIPUITests.xctest */,
+				B36127412BC6610800BDFE67 /* YLIP.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B34694052BC36B070058B51E /* YLIP */ = {
+		B36127432BC6610800BDFE67 /* YLIP */ = {
 			isa = PBXGroup;
 			children = (
-				B34694062BC36B070058B51E /* App.swift */,
-				B34694082BC36B070058B51E /* ContentView.swift */,
-				B346940A2BC36B080058B51E /* Assets.xcassets */,
-				B346940C2BC36B080058B51E /* YLIP.entitlements */,
-				B346940D2BC36B080058B51E /* Preview Content */,
-				B36449A02BC481A800566716 /* service.h */,
-				B36449A12BC481A800566716 /* service.c */,
-				B364499F2BC481A800566716 /* bridging-header.h */,
-				B36449A32BC483F400566716 /* cmodule.swift */,
-				B3721DB32BC4F0D000494201 /* util.swift */,
-				B309CBE12BC52D1300807283 /* Info.plist */,
+				B36127442BC6610800BDFE67 /* YLIPApp.swift */,
+				B36127462BC6610800BDFE67 /* ContentView.swift */,
+				B36127582BC661FA00BDFE67 /* bridging-header.h */,
+				B36127592BC6621E00BDFE67 /* cmodule.swift */,
+				B36127552BC661F000BDFE67 /* service.h */,
+				B36127532BC661F000BDFE67 /* service.c */,
+				B36127482BC6610900BDFE67 /* Assets.xcassets */,
+				B36127542BC661F000BDFE67 /* util.swift */,
+				B361274A2BC6610900BDFE67 /* YLIP.entitlements */,
+				B361274B2BC6610900BDFE67 /* Preview Content */,
 			);
 			path = YLIP;
 			sourceTree = "<group>";
 		};
-		B346940D2BC36B080058B51E /* Preview Content */ = {
+		B361274B2BC6610900BDFE67 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B346940E2BC36B080058B51E /* Preview Assets.xcassets */,
+				B361274C2BC6610900BDFE67 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B34694172BC36B080058B51E /* YLIPTests */ = {
-			isa = PBXGroup;
-			children = (
-				B34694182BC36B080058B51E /* YLIPTests.swift */,
-			);
-			path = YLIPTests;
-			sourceTree = "<group>";
-		};
-		B34694212BC36B080058B51E /* YLIPUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B34694222BC36B080058B51E /* YLIPUITests.swift */,
-				B34694242BC36B080058B51E /* YLIPUITestsLaunchTests.swift */,
-			);
-			path = YLIPUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B34694022BC36B070058B51E /* YLIP */ = {
+		B36127402BC6610800BDFE67 /* YLIP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B34694282BC36B080058B51E /* Build configuration list for PBXNativeTarget "YLIP" */;
+			buildConfigurationList = B36127502BC6610900BDFE67 /* Build configuration list for PBXNativeTarget "YLIP" */;
 			buildPhases = (
-				B34693FF2BC36B070058B51E /* Sources */,
-				B34694002BC36B070058B51E /* Frameworks */,
-				B34694012BC36B070058B51E /* Resources */,
+				B361273D2BC6610800BDFE67 /* Sources */,
+				B361273E2BC6610800BDFE67 /* Frameworks */,
+				B361273F2BC6610800BDFE67 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -161,70 +99,26 @@
 			);
 			name = YLIP;
 			productName = YLIP;
-			productReference = B34694032BC36B070058B51E /* YLIP.app */;
+			productReference = B36127412BC6610800BDFE67 /* YLIP.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B34694132BC36B080058B51E /* YLIPTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B346942B2BC36B080058B51E /* Build configuration list for PBXNativeTarget "YLIPTests" */;
-			buildPhases = (
-				B34694102BC36B080058B51E /* Sources */,
-				B34694112BC36B080058B51E /* Frameworks */,
-				B34694122BC36B080058B51E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B34694162BC36B080058B51E /* PBXTargetDependency */,
-			);
-			name = YLIPTests;
-			productName = YLIPTests;
-			productReference = B34694142BC36B080058B51E /* YLIPTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B346941D2BC36B080058B51E /* YLIPUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B346942E2BC36B080058B51E /* Build configuration list for PBXNativeTarget "YLIPUITests" */;
-			buildPhases = (
-				B346941A2BC36B080058B51E /* Sources */,
-				B346941B2BC36B080058B51E /* Frameworks */,
-				B346941C2BC36B080058B51E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B34694202BC36B080058B51E /* PBXTargetDependency */,
-			);
-			name = YLIPUITests;
-			productName = YLIPUITests;
-			productReference = B346941E2BC36B080058B51E /* YLIPUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B34693FB2BC36B070058B51E /* Project object */ = {
+		B36127392BC6610800BDFE67 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					B34694022BC36B070058B51E = {
+					B36127402BC6610800BDFE67 = {
 						CreatedOnToolsVersion = 15.3;
 						LastSwiftMigration = 1530;
 					};
-					B34694132BC36B080058B51E = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = B34694022BC36B070058B51E;
-					};
-					B346941D2BC36B080058B51E = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = B34694022BC36B070058B51E;
-					};
 				};
 			};
-			buildConfigurationList = B34693FE2BC36B070058B51E /* Build configuration list for PBXProject "YLIP" */;
+			buildConfigurationList = B361273C2BC6610800BDFE67 /* Build configuration list for PBXProject "YLIP" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,91 +126,45 @@
 				en,
 				Base,
 			);
-			mainGroup = B34693FA2BC36B070058B51E;
-			productRefGroup = B34694042BC36B070058B51E /* Products */;
+			mainGroup = B36127382BC6610800BDFE67;
+			productRefGroup = B36127422BC6610800BDFE67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B34694022BC36B070058B51E /* YLIP */,
-				B34694132BC36B080058B51E /* YLIPTests */,
-				B346941D2BC36B080058B51E /* YLIPUITests */,
+				B36127402BC6610800BDFE67 /* YLIP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B34694012BC36B070058B51E /* Resources */ = {
+		B361273F2BC6610800BDFE67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B346940F2BC36B080058B51E /* Preview Assets.xcassets in Resources */,
-				B346940B2BC36B080058B51E /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B34694122BC36B080058B51E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B346941C2BC36B080058B51E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				B361274D2BC6610900BDFE67 /* Preview Assets.xcassets in Resources */,
+				B36127492BC6610900BDFE67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B34693FF2BC36B070058B51E /* Sources */ = {
+		B361273D2BC6610800BDFE67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B34694092BC36B070058B51E /* ContentView.swift in Sources */,
-				B36449A42BC483F400566716 /* cmodule.swift in Sources */,
-				B36449A22BC481A800566716 /* service.c in Sources */,
-				B3721DB42BC4F0D000494201 /* util.swift in Sources */,
-				B34694072BC36B070058B51E /* App.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B34694102BC36B080058B51E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B34694192BC36B080058B51E /* YLIPTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B346941A2BC36B080058B51E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B34694252BC36B080058B51E /* YLIPUITestsLaunchTests.swift in Sources */,
-				B34694232BC36B080058B51E /* YLIPUITests.swift in Sources */,
+				B36127472BC6610800BDFE67 /* ContentView.swift in Sources */,
+				B36127562BC661F000BDFE67 /* service.c in Sources */,
+				B36127452BC6610800BDFE67 /* YLIPApp.swift in Sources */,
+				B361275A2BC6621E00BDFE67 /* cmodule.swift in Sources */,
+				B36127572BC661F000BDFE67 /* util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		B34694162BC36B080058B51E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B34694022BC36B070058B51E /* YLIP */;
-			targetProxy = B34694152BC36B080058B51E /* PBXContainerItemProxy */;
-		};
-		B34694202BC36B080058B51E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B34694022BC36B070058B51E /* YLIP */;
-			targetProxy = B346941F2BC36B080058B51E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		B34694262BC36B080058B51E /* Debug */ = {
+		B361274E2BC6610900BDFE67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -373,11 +221,12 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YLIP/bridging-header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B34694272BC36B080058B51E /* Release */ = {
+		B361274F2BC6610900BDFE67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -427,10 +276,11 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "YLIP/bridging-header.h";
 			};
 			name = Release;
 		};
-		B34694292BC36B080058B51E /* Debug */ = {
+		B36127512BC6610900BDFE67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -441,19 +291,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YLIP/Preview Content\"";
 				DEVELOPMENT_TEAM = 692R843P25;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readwrite;
-				"ENABLE_USER_SELECTED_FILES[sdk=*]" = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIRequiredDeviceCapabilities[sdk=*]" = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -463,20 +309,18 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "-v";
-				PRODUCT_BUNDLE_IDENTIFIER = leok7v.YLIP;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.leok7v.YLIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "YLIP/bridging-header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B346942A2BC36B080058B51E /* Release */ = {
+		B36127522BC6610900BDFE67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -487,19 +331,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YLIP/Preview Content\"";
 				DEVELOPMENT_TEAM = 692R843P25;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readwrite;
-				"ENABLE_USER_SELECTED_FILES[sdk=*]" = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIRequiredDeviceCapabilities[sdk=*]" = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -509,144 +349,38 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = "-v";
-				PRODUCT_BUNDLE_IDENTIFIER = leok7v.YLIP;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.leok7v.YLIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "YLIP/bridging-header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B346942C2BC36B080058B51E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leok7v.YLIPTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YLIP";
-			};
-			name = Debug;
-		};
-		B346942D2BC36B080058B51E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leok7v.YLIPTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLIP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/YLIP";
-			};
-			name = Release;
-		};
-		B346942F2BC36B080058B51E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leok7v.YLIPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YLIP;
-			};
-			name = Debug;
-		};
-		B34694302BC36B080058B51E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = leok7v.YLIPUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YLIP;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B34693FE2BC36B070058B51E /* Build configuration list for PBXProject "YLIP" */ = {
+		B361273C2BC6610800BDFE67 /* Build configuration list for PBXProject "YLIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B34694262BC36B080058B51E /* Debug */,
-				B34694272BC36B080058B51E /* Release */,
+				B361274E2BC6610900BDFE67 /* Debug */,
+				B361274F2BC6610900BDFE67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B34694282BC36B080058B51E /* Build configuration list for PBXNativeTarget "YLIP" */ = {
+		B36127502BC6610900BDFE67 /* Build configuration list for PBXNativeTarget "YLIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B34694292BC36B080058B51E /* Debug */,
-				B346942A2BC36B080058B51E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B346942B2BC36B080058B51E /* Build configuration list for PBXNativeTarget "YLIPTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B346942C2BC36B080058B51E /* Debug */,
-				B346942D2BC36B080058B51E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B346942E2BC36B080058B51E /* Build configuration list for PBXNativeTarget "YLIPUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B346942F2BC36B080058B51E /* Debug */,
-				B34694302BC36B080058B51E /* Release */,
+				B36127512BC6610900BDFE67 /* Debug */,
+				B36127522BC6610900BDFE67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B34693FB2BC36B070058B51E /* Project object */;
+	rootObject = B36127392BC6610800BDFE67 /* Project object */;
 }
