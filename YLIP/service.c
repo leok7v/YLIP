@@ -11,24 +11,6 @@ static void service_ini(void) {
     
 }
 
-static void* download_thread(void *argument) {
-    const int32_t ms = random() % 1000 + 250;
-    struct timespec delay = { .tv_sec = 0, .tv_nsec = 1000 * 1000 * ms };
-    nanosleep(&delay, null);
-    if (service.downloaded != null) {
-        service.downloaded(0, "");
-    }
-    return null;
-}
-
-static pthread_t thread_download;
-
-static void service_download(const char* url, const char* file) {
-    assert(thread_download == 0);
-    pthread_create(&thread_download, null, download_thread, null);
-    pthread_detach(thread_download);
-}
-
 static void* load_thread(void *argument) {
     const int32_t ms = random() % 1000 + 250;
     struct timespec delay = { .tv_sec = 0, .tv_nsec = 1000 * 1000 * ms };
@@ -90,8 +72,6 @@ static errno_t service_mirror(const uint8_t* input, int64_t input_bytes, uint8_t
 
 service_if service = {
     .ini = service_ini,
-    .download = service_download,
-    .downloaded = null,
     .load = service_load,
     .loaded = null,
     .generate = service_generate,

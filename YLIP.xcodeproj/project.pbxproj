@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B36127452BC6610800BDFE67 /* YLIPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127442BC6610800BDFE67 /* YLIPApp.swift */; };
+		B36127452BC6610800BDFE67 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127442BC6610800BDFE67 /* app.swift */; };
 		B36127472BC6610800BDFE67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127462BC6610800BDFE67 /* ContentView.swift */; };
 		B36127492BC6610900BDFE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36127482BC6610900BDFE67 /* Assets.xcassets */; };
 		B361274D2BC6610900BDFE67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B361274C2BC6610900BDFE67 /* Preview Assets.xcassets */; };
 		B36127562BC661F000BDFE67 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = B36127532BC661F000BDFE67 /* service.c */; };
 		B36127572BC661F000BDFE67 /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127542BC661F000BDFE67 /* util.swift */; };
-		B361275A2BC6621E00BDFE67 /* cmodule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127592BC6621E00BDFE67 /* cmodule.swift */; };
+		B361275A2BC6621E00BDFE67 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36127592BC6621E00BDFE67 /* Service.swift */; };
+		B3C05E732BC72D3000904E7A /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C05E722BC72D3000904E7A /* Downloader.swift */; };
+		B3DFAFE32BC99B7A00AFE139 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DFAFE22BC99B7A00AFE139 /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B36127412BC6610800BDFE67 /* YLIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B36127442BC6610800BDFE67 /* YLIPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPApp.swift; sourceTree = "<group>"; };
+		B36127442BC6610800BDFE67 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
 		B36127462BC6610800BDFE67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B36127482BC6610900BDFE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B361274A2BC6610900BDFE67 /* YLIP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YLIP.entitlements; sourceTree = "<group>"; };
@@ -27,7 +29,11 @@
 		B36127542BC661F000BDFE67 /* util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		B36127552BC661F000BDFE67 /* service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service.h; sourceTree = "<group>"; };
 		B36127582BC661FA00BDFE67 /* bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
-		B36127592BC6621E00BDFE67 /* cmodule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cmodule.swift; sourceTree = "<group>"; };
+		B36127592BC6621E00BDFE67 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B394B2E32BC66B3A00C1524A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3C05E712BC6744E00904E7A /* YLIPDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YLIPDebug.entitlements; sourceTree = "<group>"; };
+		B3C05E722BC72D3000904E7A /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		B3DFAFE22BC99B7A00AFE139 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +66,18 @@
 		B36127432BC6610800BDFE67 /* YLIP */ = {
 			isa = PBXGroup;
 			children = (
-				B36127442BC6610800BDFE67 /* YLIPApp.swift */,
+				B394B2E32BC66B3A00C1524A /* Info.plist */,
+				B36127442BC6610800BDFE67 /* app.swift */,
 				B36127462BC6610800BDFE67 /* ContentView.swift */,
+				B3C05E722BC72D3000904E7A /* Downloader.swift */,
+				B36127592BC6621E00BDFE67 /* Service.swift */,
+				B3DFAFE22BC99B7A00AFE139 /* Toast.swift */,
 				B36127582BC661FA00BDFE67 /* bridging-header.h */,
-				B36127592BC6621E00BDFE67 /* cmodule.swift */,
 				B36127552BC661F000BDFE67 /* service.h */,
 				B36127532BC661F000BDFE67 /* service.c */,
 				B36127482BC6610900BDFE67 /* Assets.xcassets */,
 				B36127542BC661F000BDFE67 /* util.swift */,
+				B3C05E712BC6744E00904E7A /* YLIPDebug.entitlements */,
 				B361274A2BC6610900BDFE67 /* YLIP.entitlements */,
 				B361274B2BC6610900BDFE67 /* Preview Content */,
 			);
@@ -155,9 +165,11 @@
 			files = (
 				B36127472BC6610800BDFE67 /* ContentView.swift in Sources */,
 				B36127562BC661F000BDFE67 /* service.c in Sources */,
-				B36127452BC6610800BDFE67 /* YLIPApp.swift in Sources */,
-				B361275A2BC6621E00BDFE67 /* cmodule.swift in Sources */,
+				B3C05E732BC72D3000904E7A /* Downloader.swift in Sources */,
+				B36127452BC6610800BDFE67 /* app.swift in Sources */,
+				B361275A2BC6621E00BDFE67 /* Service.swift in Sources */,
 				B36127572BC661F000BDFE67 /* util.swift in Sources */,
+				B3DFAFE32BC99B7A00AFE139 /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +211,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -216,7 +230,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -261,9 +277,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -272,7 +290,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -286,13 +306,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = YLIP/YLIP.entitlements;
+				CODE_SIGN_ENTITLEMENTS = YLIP/YLIPDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YLIP/Preview Content\"";
 				DEVELOPMENT_TEAM = 692R843P25;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -304,10 +326,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.leok7v.YLIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -331,8 +353,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YLIP/Preview Content\"";
 				DEVELOPMENT_TEAM = 692R843P25;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -344,10 +368,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.leok7v.YLIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";

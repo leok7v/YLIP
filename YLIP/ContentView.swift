@@ -1,19 +1,34 @@
 import SwiftUI
 
+
+
+
 struct ContentView: View {
     
     @State private var displayText = "Hello, world!"
     @State private var errorText = ""
-    @State private var showError = false
+    @State private var statusText = ""
+    @State private var showToast = false;
+    @StateObject var downloader = Downloader()
     
     var body: some View {
         ZStack {
             VStack {
-                Image(systemName: "globe")
-                    .padding()
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                    .frame(maxWidth: .infinity, alignment: .topLeading) // Aligns the image to the top leading
+                HStack {
+                    Button(action: { print("hamburger") }) {
+                        Image(systemName: "line.horizontal.3")
+                            .imageScale(.large)
+                            .foregroundStyle(.tint)
+                            .padding(.leading, 4)
+                    }
+                    .frame(alignment: .topLeading)
+                    .buttonStyle(PlainButtonStyle())
+                    Text(statusText)
+                }
+                .frame(maxWidth: .infinity, alignment: .topLeading)
+                if downloader.downloading {
+                    ProgressView(value: downloader.progress).padding()
+                }
                 Text(displayText)
                     .padding()
                     .lineLimit(nil)
@@ -26,33 +41,44 @@ struct ContentView: View {
                         displayText = r.output
                     } else {
                         errorText = r.error
-                        withAnimation { showError = true }
+                        if (!showToast) {
+                            withAnimation { 
+                                showToast = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                    withAnimation { showToast = false }
+                                }
+                            }
+                        }
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .bottom)
                 .padding()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity) // Makes VStack fill the screen
-            .onTapGesture { withAnimation { showError = false } }
-            ToastView(message: errorText, isError: true, isVisible: $showError)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            Toast(message: errorText, isError: true, isVisible: $showToast)
+            .onTapGesture { withAnimation { showToast = false } }
         }
         .onAppear {
-            Service.ini()
-            Service.download(url: "https://foo.bar", file: "foo.bar") { err, text in
-                DispatchQueue.main.async {
-                    if err == 0 {
+            if downloader.needsDownload() {
+                statusText = "Downloading"
+                downloader.startDownload() { r in
+                    statusText = ""
+                    print("done downloading \(r)")
+                    if (r == 200) {
                         downloaded()
-                    } else {
-                        print("Download error: \(text)")
                     }
                 }
+            } else {
+                downloaded()
             }
         }
     }
 
     func downloaded() {
         print("Download successful")
-        Service.load(file: "foo.bar") { err, text in
+        statusText = ""
+        Service.ini()
+        Service.load(file: downloader.destination().path()) { err, text in
             DispatchQueue.main.async {
                 if err == 0 {
                     loaded()
@@ -61,6 +87,7 @@ struct ContentView: View {
                 }
             }
         }
+        
     }
     
     func loaded() {
@@ -71,7 +98,6 @@ struct ContentView: View {
     }
 
     func token(_ token: String) {
-        print("token: \(token)")
         displayText += " " + token
     }
 
@@ -86,3 +112,4 @@ struct ContentView_Previews: SwiftUI.PreviewProvider {
         ContentView()
     }
 }
+
